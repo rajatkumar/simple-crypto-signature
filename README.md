@@ -97,3 +97,9 @@ To generate the public key for your private key use the following command
 ```bash
 openssl rsa -in private.pem -outform PEM -pubout -out public.pem
 ```
+
+## License
+
+Copyright (c) 2018 Rajat Kumar
+
+Licensed under the MIT license.
