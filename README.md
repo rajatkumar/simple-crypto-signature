@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/rajatkumar/simple-crypto-signature.svg?branch=master)](https://travis-ci.org/rajatkumar/simple-crypto-signature)
+
+[![Coverage Status](https://coveralls.io/repos/github/rajatkumar/simple-crypto-signature/badge.svg?branch=master)](https://coveralls.io/github/rajatkumar/simple-crypto-signature?branch=master)
+
 # simple-crypto-signature
 
 > A simple abstraction to sign and verify string payloads using NodeJS

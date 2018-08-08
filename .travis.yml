@@ -4,5 +4,5 @@ node_js:
     - "lts/*"                # Active LTS release
     - "node"                 # Latest stable release
 install: 'yarn install'
-script: 'yarn test:cov'
-after_success: 'yarn test'
+script: 'yarn test'
+after_success: 'yarn test --coverage --coverageReporters=text-lcov | ./node_modules/.bin/coveralls'
