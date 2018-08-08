@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+    - "8"
+    - "lts/*"                # Active LTS release
+    - "node"                 # Latest stable release
+install: 'yarn install'
+script: 'yarn test:cov'
+after_success: 'yarn test'

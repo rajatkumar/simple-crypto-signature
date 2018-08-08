@@ -1,0 +1,36 @@
+{
+  "name": "simple-crypto-signature",
+  "description": "A simple abstraction to sign and verify string payloads using NodeJS",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rajat Kumar",
+    "url": "https://github.com/rajatkumar"
+  },
+  "main": "lib/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.4.2"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "crypto",
+    "sign",
+    "verify",
+    "private key",
+    "public key"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageReporters": [
+      "text-summary",
+      "html"
+    ]
+  }
+}
