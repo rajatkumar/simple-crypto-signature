@@ -2,6 +2,9 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/rajatkumar/simple-crypto-signature/badge.svg?branch=master)](https://coveralls.io/github/rajatkumar/simple-crypto-signature?branch=master)
 
+[![Dependency Status](https://david-dm.org/rajatkumar/simple-crypto-signature.svg)](https://david-dm.org/rajatkumar/simple-crypto-signature)
+[![devDependencies Status](https://david-dm.org/rajatkumar/simple-crypto-signature/dev-status.svg)](https://david-dm.org/rajatkumar/simple-crypto-signature?type=dev)
+
 # simple-crypto-signature
 
 > A simple abstraction to sign and verify string payloads using NodeJS
