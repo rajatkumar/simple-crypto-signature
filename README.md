@@ -22,9 +22,9 @@ Require the library and pass the options to the constructor:
 const SimpleCryptoSignature = require('simple-crypto-signature');
 // pass simple options
 const defaultOptions = {
-  privateKeyPath: path.join(__dirname, 'private.pem'),
-  publicKeyPath: path.join(__dirname, 'public.pem'),
-  passPhrase: '<your_pass_phrase>'
+    privateKeyPath: path.join(__dirname, 'private.pem'),
+    publicKeyPath: path.join(__dirname, 'public.pem'),
+    passPhrase: '<your_pass_phrase>'
 };
 const signatureGenerator = new SimpleCryptoSignature(defaultOptions);
 ```
@@ -53,13 +53,13 @@ const verifiedValue = signatureGenerator.verify(message, signedValue);
 
 ```js
 {
-  privateKeyPath, // Path to private key , used for signing {String}
-    publicKeyPath, // Path to public key , used for verifying {String}
-    privateKey, // You can also pass the private key string value instead of private key path {String}
-    publicKey, // You can also pass the public key string value instead of public key path {String}
-    passPhrase, // The pass phrase used for the private key, if not passed it assumes the private key does not use a pass phrase {String}
-    signatureFormat, // The output of signature format - `hex` | `base64`(default) {String}
-    signatureAlgorithm; // Algo to use to sign the payload  - `sha256` (default) | `md5` | `DSA` ... see `crypto.getHashes()` for all the algorithms supported by NodeJS crypto library
+    privateKeyPath, // Path to private key , used for signing {String}
+        publicKeyPath, // Path to public key , used for verifying {String}
+        privateKey, // You can also pass the private key string value instead of private key path {String}
+        publicKey, // You can also pass the public key string value instead of public key path {String}
+        passPhrase, // The pass phrase used for the private key, if not passed it assumes the private key does not use a pass phrase {String}
+        signatureFormat, // The output of signature format - `hex` | `base64`(default) {String}
+        signatureAlgorithm; // Algo to use to sign the payload  - `sha256` (default) | `md5` | `DSA` ... see `crypto.getHashes()` for all the algorithms supported by NodeJS crypto library
 }
 ```
 
@@ -104,6 +104,16 @@ To generate the public key for your private key use the following command
 ```bash
 openssl rsa -in private.pem -outform PEM -pubout -out public.pem
 ```
+
+## Contributing
+
+Feel free to add more features and do not forget to add good unit tests for those features.
+
+The repo relies on `Jest` for unit tests and you can use the following:
+
+-   `yarn test` : to run all the tests
+-   `yarn test:cov` : to run all the tests with coverage report
+-   `yarn test:debug` : when you want to debug your tests
 
 ## License
 
