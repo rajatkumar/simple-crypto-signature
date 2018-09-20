@@ -1,7 +1,7 @@
 {
     "name": "simple-crypto-signature",
     "main": "lib/index.js",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A simple abstraction to sign and verify string payloads using NodeJS",
     "homepage": "https://github.com/rajatkumar/simple-crypto-signature",
     "author": {
